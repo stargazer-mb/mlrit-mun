@@ -1,11 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Typography } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import { Typography, makeStyles } from '@material-ui/core';
+
+import Committee from './committeeRedirect';
+
+// import UNGAlogo from "../../resources/images/Comm"
 
 const useStyles = makeStyles((theme) => ({
   committeesRoot: {
-    marginInline: theme.spacing(2),
+    // marginInline: theme.spacing(2),
+    marginTop: '5rem',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
   },
 }));
 
@@ -13,7 +21,8 @@ export default function Committees() {
   let classes = useStyles();
   return (
     <div className={classes.committeesRoot}>
-      <h1>Committees Route</h1>
+      <Committee />
+      <Committee />
       <Link to='/unhrc'>
         <h4>UNHRC</h4>
       </Link>

@@ -16,6 +16,7 @@ export default function AllRoutes() {
       <Route path='/ip' element={<h3>IP</h3>}></Route>
       <Route path='/clubliterati' element={<ClubLiterati />}></Route>
       <Route path='/team' name='Team Route' element={<Team />}></Route>
+      <Route path='/registration' element={<h3>Registration Route</h3>} />
     </Routes>
   );
 }

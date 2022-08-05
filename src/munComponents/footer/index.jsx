@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   footerRoot: {
-    marginInline: theme.spacing(2),
+    backgroundColor: 'red',
   },
 }));
 
