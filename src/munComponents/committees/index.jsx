@@ -23,6 +23,9 @@ export default function Committees() {
     <div className={classes.committeesRoot}>
       <Committee />
       <Committee />
+      <Committee />
+      <Committee />
+      <Committee />
       <Link to='/unhrc'>
         <h4>UNHRC</h4>
       </Link>
@@ -32,8 +35,8 @@ export default function Committees() {
       <Link to='/unsc'>
         <h4>UNSC</h4>
       </Link>
-      <Link to='/aippm'>
-        <h4>AIPPM</h4>
+      <Link to='/loksabha'>
+        <h4>Lok Sabha</h4>
       </Link>
       <Link to='/ip'>
         <h4>IP</h4>

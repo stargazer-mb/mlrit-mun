@@ -5,8 +5,6 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './newApp';
 import { red, yellow } from '@material-ui/core/colors';
 
-import LitFestApp from './Lit Fest App/litFestApp';
-
 const theme = createTheme({
   palette: {
     primary: {
