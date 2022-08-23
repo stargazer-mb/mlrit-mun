@@ -7,6 +7,7 @@ import Img from '../../resources/images/unhrcLogo.png';
 let useStyles = makeStyles((theme) => ({
   committeeRoot: {
     width: '80vw',
+    marginBlock: '2rem',
     // border: 'solid black 3px',
     // boxShadow: '0 8px 8px -4px black', // shadow elevation
     // boxShadow: '0 0 5px 5px black ', // normal
@@ -20,17 +21,18 @@ let useStyles = makeStyles((theme) => ({
 export default function Committee(props) {
   let classes = useStyles();
   return (
-    <Button
-      className={classes.committeeRoot}
-      component={Link}
-      to='/unhrc'
-      disableRipple
-      disableFocusRipple
-      disableTouchRipple
-      disableElevation
-      style={{ background: 'transparent' }}
-    >
-      <img src={Img} alt='committee logo' style={{ width: '100vw' }} />
-    </Button>
+    <div className={classes.committeeRoot}>
+      <Button
+        component={Link}
+        to='/unhrc'
+        disableRipple
+        disableFocusRipple
+        disableTouchRipple
+        disableElevation
+        style={{ background: 'transparent', width: '80vw' }}
+      >
+        <img src={Img} alt='committee logo' style={{ height: '65vh' }} />
+      </Button>
+    </div>
   );
 }
