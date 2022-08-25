@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button, makeStyles, Typography } from '@material-ui/core';
-
-import Img from '../../resources/images/unhrcLogo.png';
+import { makeStyles } from '@material-ui/core';
 
 let useStyles = makeStyles((theme) => ({
   committeeRoot: {
@@ -12,7 +10,11 @@ let useStyles = makeStyles((theme) => ({
     // boxShadow: '0 8px 8px -4px black', // shadow elevation
     // boxShadow: '0 0 5px 5px black ', // normal
     // boxShadow: '0.5rem 0.5rem 20px 0px black, -0.5rem -0.5rem 20px 0px red', // double
-    boxShadow: '0.5rem 0.5rem 20px 0px aqua, -0.5rem -0.5rem 20px 0px red',
+    // boxShadow: '0.5rem 0 20px 0px aqua, -0.5rem 0 20px 0px red',
+    // boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
+    // boxShadow:'rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px',
+    boxShadow:
+      'rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px',
     textAlign: 'center',
     borderRadius: '0.5rem',
   },
@@ -21,18 +23,8 @@ let useStyles = makeStyles((theme) => ({
 export default function Committee(props) {
   let classes = useStyles();
   return (
-    <div className={classes.committeeRoot}>
-      <Button
-        component={Link}
-        to='/unhrc'
-        disableRipple
-        disableFocusRipple
-        disableTouchRipple
-        disableElevation
-        style={{ background: 'transparent', width: '80vw' }}
-      >
-        <img src={Img} alt='committee logo' style={{ height: '65vh' }} />
-      </Button>
-    </div>
+    <Link to={props.redirectTo}>
+      <img src={props.img} className={classes.committeeRoot} alt='committee' />
+    </Link>
   );
 }

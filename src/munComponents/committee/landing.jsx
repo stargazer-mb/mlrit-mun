@@ -6,10 +6,6 @@ import { Link } from 'react-router-dom';
 import FloatingSquares from '../../components/Reusable Components/Floating Squares/index';
 import AnimatedText from '../../components/Reusable Components/animatedText.jsx';
 
-import TitleSponsor from '../../resources/images/Title Sponsor.png';
-import munLogo from '../../resources/images/MUN logo.png';
-import bg from '../../resources/images/homeBG.png';
-
 const useStyles = makeStyles((theme) => ({
   landingRoot: {
     position: 'relative',
@@ -39,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Landing() {
+export default function CommitteeLanding(props) {
   let classes = useStyles();
 
   let component = (
@@ -47,27 +43,16 @@ export default function Landing() {
       <Hidden smDown>
         <Grid item md={1}></Grid>
       </Hidden>
-      <Grid item xs={12} md={5} className={classes.divCentercntnt}>
+      <Grid item xs={12} md={6} className={classes.divCentercntnt}>
         <div className={classes.divCentercntnt}>
-          <img
-            src={TitleSponsor}
-            alt='Title Sponsor'
-            className={classes.tsLogo}
-          ></img>
-          <Typography>Presents</Typography>
-          <Typography variant='h4'>The Fifth Edition of</Typography>
           <AnimatedText
-            txt='MLRIT-MUN'
-            variant='h1'
-            colors={[
-              '#FFCDDD',
-              '#ee9ca7',
-              '#FF008E',
-              '#D22779',
-              '#612897',
-              '#0C1E7F',
-            ]}
+            txt={props.elements.title}
+            variant='h2'
+            colors={props.elements.colors}
           />
+          <Typography style={{ maxWidth: '80%', textAlign: 'justify' }}>
+            {props.elements.about}
+          </Typography>
           <Button
             className={classes.applybtn}
             component={Link}
@@ -77,9 +62,13 @@ export default function Landing() {
           </Button>
         </div>
       </Grid>
-      <Grid item xs={12} md={5} className={classes.divCentercntnt}>
+      <Grid item xs={12} md={4} className={classes.divCentercntnt}>
         <div className={classes.divCentercntnt}>
-          <img src={munLogo} alt='MLRIT MUN Main Logo'></img>
+          <img
+            src={props.elements.logo}
+            alt='Committee Logo'
+            style={{ maxWidth: '100%' }}
+          ></img>
         </div>
       </Grid>
       <Hidden smDown>

@@ -12,7 +12,6 @@ const useStyles = makeStyles(() => ({
     alignItems: 'center',
     flexDirection: 'column',
     textAlign: 'center',
-    marginInline: '1rem',
   },
   rowFlex: {
     display: 'flex',
@@ -20,10 +19,11 @@ const useStyles = makeStyles(() => ({
     alignItems: 'center',
     flexDirection: 'row',
     textAlign: 'center',
+    marginBlock: '0.25rem',
   },
   icon: {
     transition: 'transform 0.1s, ease-in-out',
-    marginBlock: '0.2rem',
+    marginInline: '0.2rem',
     '&:hover': {
       transform: 'scale(110%,110%)',
     },
@@ -33,14 +33,14 @@ const useStyles = makeStyles(() => ({
 export default function Developer() {
   let classes = useStyles();
   return (
-    <div className={classes.rowFlex}>
+    <div className={classes.columnFlex}>
       <div>
-        <img src={devLogo} alt='developer logo' style={{ height: '5rem' }} />
+        <img src={devLogo} alt='developer logo' style={{ height: '4rem' }} />
       </div>
-      <div className={classes.columnFlex}>
-        <LinkedIn className={classes.icon} />
-        <MailOutlineOutlined className={classes.icon} />
-        <Phone className={classes.icon} />
+      <div className={classes.rowFlex}>
+        <LinkedIn className={classes.icon} fontSize='small' />
+        <MailOutlineOutlined className={classes.icon} fontSize='small' />
+        <Phone className={classes.icon} fontSize='small' />
       </div>
     </div>
   );

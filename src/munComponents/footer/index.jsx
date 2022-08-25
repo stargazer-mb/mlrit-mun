@@ -28,10 +28,8 @@ export default function Footer() {
     <div className={classes.footerRoot}>
       <div className={classes.seperator} />
       <Grid container className={classes.main}>
-        <Hidden smDown>
-          <Grid item xs={1}></Grid>
-        </Hidden>
-        <Grid item xs={12} md={3} className={classes.item}>
+        <Grid item xs={1}></Grid>
+        <Grid item xs={9} md={3} className={classes.item}>
           <Typography
             style={{
               fontSize: '1.4rem',
@@ -43,7 +41,7 @@ export default function Footer() {
           </Typography>
           <MLRIT />
         </Grid>
-        <Grid item xs={12} md={3} className={classes.item}>
+        <Grid item xs={6} md={3} className={classes.item}>
           <Typography
             style={{
               fontSize: '1.4rem',
@@ -55,7 +53,7 @@ export default function Footer() {
           </Typography>
           <ContactUs />
         </Grid>
-        <Grid item xs={12} md={3} className={classes.item}>
+        <Grid item xs={6} md={3} className={classes.item}>
           <Typography
             style={{
               fontSize: '1.4rem',
