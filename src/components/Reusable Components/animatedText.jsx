@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { keyframes } from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
+import { keyframes } from 'styled-components';
 
 export default function AnimatedText(props) {
   const gradient = keyframes`{
@@ -15,7 +15,7 @@ export default function AnimatedText(props) {
         }
     }`;
 
-  let colorStr = props.colors.join(",");
+  let colorStr = props.colors.join(',');
 
   const AnimGradText = styled(props.variant)`
     animation: ${gradient} 5s ease-in-out infinite;
@@ -23,17 +23,17 @@ export default function AnimatedText(props) {
     background-size: 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
-      sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   `;
 
   return (
     <React.Fragment>
       <div
         style={{
-          backgroundColor: "inherit",
-          maxWidth: "fit-content",
-          padding: "1rem",
+          backgroundColor: 'inherit',
+          maxWidth: '100%',
+          // padding: '1rem',
         }}
       >
         <AnimGradText>{props.txt}</AnimGradText>
