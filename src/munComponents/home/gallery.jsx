@@ -2,11 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Typography, Paper, makeStyles } from '@material-ui/core';
 import Carousel from 'react-material-ui-carousel';
 
-import img1 from '../../resources/images/unhrcLogo.png';
-import img2 from '../../resources/images/ipLogo.png';
+import img1 from '../../resources/images/Sponsor-1.png';
+import img2 from '../../resources/images/location-xs.png';
 import img3 from '../../resources/images/Sponsor-1.png';
-import img4 from '../../resources/images/person.png';
-import img5 from '../../resources/images/agenda.png';
+import img4 from '../../resources/images/location-sm.png';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -17,7 +16,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-let images = [img1, img2, img3, img4, img5];
+let images = [img1, img2, img3, img4];
 
 export default function Gallery() {
   let classes = useStyles();

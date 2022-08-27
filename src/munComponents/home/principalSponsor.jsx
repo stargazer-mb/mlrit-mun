@@ -5,6 +5,7 @@ import {
   Typography,
   Link,
   IconButton,
+  Hidden,
 } from '@material-ui/core';
 import {
   Facebook,
@@ -82,10 +83,13 @@ export default function PrincipalSponsor() {
     <div className={classes.centeredDiv}>
       <Typography>About Our Principal Sponsor</Typography>
       <Grid container>
-        <Grid item xs={12} md={6} className={classes.centeredDiv}>
+        <Hidden smDown>
+          <Grid item xs={1}></Grid>
+        </Hidden>
+        <Grid item xs={12} md={5} className={classes.centeredDiv}>
           <img src={sponsor} alt='sponsor' style={{ maxWidth: '80%' }} />
         </Grid>
-        <Grid item xs={12} md={6} className={classes.centeredDiv}>
+        <Grid item xs={12} md={5} className={classes.centeredDiv}>
           <div className={classes.img}>
             <Typography>
               {' '}
@@ -139,6 +143,9 @@ export default function PrincipalSponsor() {
             </div>
           </div>
         </Grid>
+        <Hidden smDown>
+          <Grid item xs={2}></Grid>
+        </Hidden>
       </Grid>
     </div>
   );

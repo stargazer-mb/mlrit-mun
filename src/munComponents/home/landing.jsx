@@ -79,7 +79,11 @@ export default function Landing() {
       </Grid>
       <Grid item xs={12} md={5} className={classes.divCentercntnt}>
         <div className={classes.divCentercntnt}>
-          <img src={munLogo} alt='MLRIT MUN Main Logo'></img>
+          <img
+            src={munLogo}
+            alt='MLRIT MUN Main Logo'
+            style={{ maxWidth: '80%' }}
+          ></img>
         </div>
       </Grid>
       <Hidden smDown>
