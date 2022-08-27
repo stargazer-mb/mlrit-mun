@@ -60,7 +60,11 @@ export default function WhatnWhy() {
         </Hidden>
         <Grid item xs={12} md={5} className={classes.divCentercntnt}>
           <div className={classes.divCentercntnt}>
-            <img src={whatMUN} alt='What is MUN?'></img>
+            <img
+              src={whatMUN}
+              alt='What is MUN?'
+              style={{ maxWidth: '80%' }}
+            ></img>
           </div>
         </Grid>
         <Grid item xs={12} md={5} className={classes.divCentercntnt}>
@@ -102,7 +106,11 @@ export default function WhatnWhy() {
         </Grid>
         <Grid item xs={12} md={5} className={classes.divCentercntnt}>
           <div className={classes.divCentercntnt}>
-            <img src={whatMUN} alt='MLRIT-MUN?'></img>
+            <img
+              src={whatMUN}
+              alt='MLRIT-MUN?'
+              style={{ maxWidth: '80%' }}
+            ></img>
           </div>
         </Grid>
         <Hidden smDown>
