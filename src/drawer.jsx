@@ -18,7 +18,7 @@ import Routes from './Routes';
 import Footer from './munComponents/footer';
 import Logo from './resources/images/mlrit-mun logo try2.png';
 
-const drawerWidth = 240;
+// const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -32,11 +32,12 @@ const useStyles = makeStyles((theme) => ({
     color: 'inherit',
   },
   drawer: {
-    width: drawerWidth,
+    width: '100vw',
     flexShrink: 0,
+    height: 'auto',
   },
   drawerPaper: {
-    width: drawerWidth,
+    width: '100%',
   },
   drawerHeader: {
     display: 'flex',
@@ -103,7 +104,7 @@ export default function MobileDrawer() {
       </main>
       <Drawer
         className={classes.drawer}
-        anchor='right'
+        anchor='top'
         open={open}
         onClose={handleDrawerClose}
         classes={{

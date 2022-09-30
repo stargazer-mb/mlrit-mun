@@ -20,11 +20,11 @@ export default function MLRIT() {
     <Grid container>
       <Grid item xs={8} className={classes.centeredDiv}>
         <div className={classes.centeredDiv}>
-          <Typography style={{ fontSize: '1.2rem', textOverflow: 'line-wrap' }}>
+          <Typography style={{ textOverflow: 'line-wrap' }}>
             MLR Institute of Technology
           </Typography>
           <br />
-          <Typography style={{ fontSize: '0.8rem', marginTop: '-1rem' }}>
+          <Typography style={{ fontSize: '0.6rem', marginTop: '-1rem' }}>
             Dundigal, Hyderabad
           </Typography>
           <br />
@@ -36,12 +36,14 @@ export default function MLRIT() {
               flexDirection: 'row',
             }}
           >
-            <Link href='https://mlrinstitutions.ac.in/'>
+            <Link href='https://mlrit.ac.in/'>
               <Button
                 style={{
+                  fontSize: '0.8rem',
                   textTransform: 'none',
                   background: 'none',
-                  marginTop: '-1.5rem',
+                  marginTop: '-2rem',
+                  color: 'white',
                 }}
               >
                 Website

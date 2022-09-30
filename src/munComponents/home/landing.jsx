@@ -30,11 +30,16 @@ const useStyles = makeStyles((theme) => ({
     height: '25vh',
   },
   applybtn: {
-    background: 'linear-gradient(to right,purple,orange)',
+    background: 'linear-gradient(to left, #151D3B,#D82148)',
     textTransform: 'none',
+    marginInline: '0.5rem',
     borderRadius: '0.2rem',
+    padding: '0.5rem',
+    paddingInline: '1rem',
+    transition: 'transform 0.1s ease',
     '&:hover': {
       background: 'linear-gradient(to left, #0A1931, #185ADB)',
+      transform: 'scale(105%,105%)',
     },
   },
 }));
@@ -73,7 +78,7 @@ export default function Landing() {
             component={Link}
             to='/registration'
           >
-            Apply Now
+            <Typography style={{ color: 'white' }}>Register Now</Typography>
           </Button>
         </div>
       </Grid>

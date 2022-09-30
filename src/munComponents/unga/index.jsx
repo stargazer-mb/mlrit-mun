@@ -22,6 +22,8 @@ const elements = {
   rapporteur: Rapporteur,
   landingBG: LandingBG,
   agendaBG: AgendaBG,
+  bgGuideLink: 'https://yolo.com',
+  allocationMatrixLink: 'https://yolo.com',
 };
 
 export default function UNGA() {

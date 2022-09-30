@@ -2,135 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
-@media screen and (min-width: 451px) {
-  .mainRoot {
-    background-image: linear-gradient(red, yellow);
-    display: flex;
-    overflow-x: hidden;
-    font-size: large;
-    /* justify-content: space-around; */
-  }
-
-  #inPgNav {
-    margin-block: 20px;
-    padding-block: 5px;
-    overflow: auto;
-    white-space: nowrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #inPgNavBtn {
-    margin: 10px;
-    display: inline;
-  }
-  #newsImgDiv {
-    display: flex;
-    justify-content: center;
-    margin-block: 5px;
-  }
-
-  #contentDiv {
-    text-align: center;
-    align-items: center;
-    padding: 1rem;
-    margin-block: 1rem;
-    max-width: 300px;
-  }
-
-  #circContentDiv {
-    text-align: center;
-    padding: 1rem;
-    margin-block: 1rem;
-    max-width: 18rem;
-    height: 18rem;
-    border-radius: 18rem;
-    padding-top: 4rem;
-  }
-
-  #contentHead {
-    font-family: 'Playfair Display', serif;
-    font-weight: 800;
-  }
-
-  #contentBody {
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-  }
+::-webkit-scrollbar {
+  width: 0.8em;
 }
 
-@media screen and (max-width: 450px) {
-  .mainRoot {
-    display: flex;
-    overflow-x: hidden;
-    /* justify-content: space-around; */
-    /* align-items: center; */
-    margin-left: auto;
-    font-size: small;
-    /* object-fit: cover; */
-    /* background-image: linear-gradient(magenta, rgb(101, 29, 101)); */
-    /* background-image: radial-gradient(rgb(0, 229, 255), rgb(0, 21, 255)); */
-    /* background-color: rgb(174, 255, 240); */
-    z-index: 1;
-    position: absolute;
-  }
+::-webkit-scrollbar-track {
+  background-color: #010038;
+  width: 0.25em;
+}
 
-  #homeRoot {
-    background-color: rgb(174, 255, 240);
-  }
+::-webkit-scrollbar-thumb {
+  /* background-image: linear-gradient(to bottom, #d82148, #151d38, #d82148); */
+  background-color: #d82148;
+  border-radius: 1em;
+  border: 0.2em solid #010038;
+}
 
-  #inPgNav {
-    margin-block: 20px;
-    padding-block: 5px;
-    overflow: auto;
-    white-space: nowrap;
-    max-width: 99%;
-    justify-content: center;
-  }
-
-  #inPgNavContainer {
-    width: 100%;
-  }
-
-  #inPgNavBtn {
-    margin: 5px;
-    display: inline;
-  }
-  #newsImgDiv {
-    display: flex;
-    justify-content: center;
-    margin-block: 5px;
-    object-fit: contain;
-  }
-
-  #contentDiv {
-    text-align: center;
-    align-items: center;
-    padding: 1rem;
-    margin-block: 1rem;
-    min-width: 100%;
-    top: 10px;
-  }
-
-  #circContentDiv {
-    text-align: center;
-    padding: 1rem;
-    margin-block: 1rem;
-    max-width: 18rem;
-    height: 18rem;
-    border-radius: 18rem;
-    padding-top: 4rem;
-  }
-
-  #contentHead {
-    font-family: 'Playfair Display', serif;
-    font-weight: 800;
-  }
-
-  #contentBody {
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-  }
+::-webkit-scrollbar-thumb:hover {
+  /* background-image: linear-gradient(to bottom, #d82148, #151d38, #d82148); */
+  background-color: #185adb;
+  border-radius: 1em;
+  border: 0.2em solid #010038;
 }

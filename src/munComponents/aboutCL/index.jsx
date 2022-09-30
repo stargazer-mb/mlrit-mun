@@ -153,22 +153,22 @@ export default function ClubLiterati() {
           >
             <Typography>Our Events</Typography>
             <Grid container>
-              <Grid item xs={6} className={classes.coulmnFlex}>
+              <Grid item xs={12} md={6} className={classes.coulmnFlex}>
                 <Typography>MLRIT-MUN Logo</Typography>
               </Grid>
-              <Grid item xs={6} className={classes.coulmnFlex}>
+              <Grid item xs={12} md={6} className={classes.coulmnFlex}>
                 <Typography>TEDxMLRIT Logo</Typography>
               </Grid>
-              <Grid item xs={6} className={classes.coulmnFlex}>
+              <Grid item xs={12} md={6} className={classes.coulmnFlex}>
                 <Typography>MLRIT Literary Festival Logo</Typography>
               </Grid>
-              <Grid item xs={6} className={classes.coulmnFlex}>
+              <Grid item xs={12} md={6} className={classes.coulmnFlex}>
                 <Typography>Talkmasters MLRIT Logo</Typography>
               </Grid>
-              <Grid item xs={6} className={classes.coulmnFlex}>
+              <Grid item xs={12} md={6} className={classes.coulmnFlex}>
                 <Typography>Murder Mystery Logo</Typography>
               </Grid>
-              <Grid item xs={6} className={classes.coulmnFlex}>
+              <Grid item xs={12} md={6} className={classes.coulmnFlex}>
                 <Typography>VillainCon Logo</Typography>
               </Grid>
             </Grid>
