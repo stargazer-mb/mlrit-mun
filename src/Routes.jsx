@@ -10,6 +10,7 @@ import UNGA from './munComponents/unga';
 import UNSC from './munComponents/unsc';
 import LokSabha from './munComponents/loksabha';
 import IP from './munComponents/ip';
+import Registration from './munComponents/registration';
 
 function ScrollToTop(props) {
   const location = useLocation();
@@ -33,7 +34,7 @@ export default function AllRoutes() {
         <Route path='/ip' element={<IP />}></Route>
         <Route path='/clubliterati' element={<ClubLiterati />}></Route>
         <Route path='/team' name='Team Route' element={<Team />}></Route>
-        <Route path='/registration' element={<h3>Registration Route</h3>} />
+        <Route path='/registration' element={<Registration />} />
       </Routes>
     </ScrollToTop>
   );

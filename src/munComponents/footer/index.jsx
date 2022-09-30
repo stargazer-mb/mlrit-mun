@@ -4,6 +4,7 @@ import { Typography, makeStyles, Grid, Hidden } from '@material-ui/core';
 import ContactUs from './contactUs';
 import MLRIT from './mlrit';
 import Developer from './developer';
+import UsefulLinks from './usefulLinks';
 
 const useStyles = makeStyles((theme) => ({
   footerRoot: {
@@ -12,10 +13,11 @@ const useStyles = makeStyles((theme) => ({
   },
   seperator: {
     height: '0.4rem',
-    backgroundColor: 'blue',
+    backgroundColor: 'purple',
   },
   main: {
-    backgroundColor: 'grey',
+    backgroundColor: '#010038',
+    color: 'white',
   },
   item: {
     marginBlock: '1rem',
@@ -32,7 +34,7 @@ export default function Footer() {
         <Grid item xs={9} md={3} className={classes.item}>
           <Typography
             style={{
-              fontSize: '1.4rem',
+              // fontSize: '1.4rem',
               textAlign: 'center',
               marginBottom: '1rem',
             }}
@@ -41,10 +43,10 @@ export default function Footer() {
           </Typography>
           <MLRIT />
         </Grid>
-        <Grid item xs={6} md={3} className={classes.item}>
+        <Grid item xs={6} md={2} className={classes.item}>
           <Typography
             style={{
-              fontSize: '1.4rem',
+              // fontSize: '1.4rem',
               textAlign: 'center',
               marginBottom: '1rem',
             }}
@@ -53,18 +55,32 @@ export default function Footer() {
           </Typography>
           <ContactUs />
         </Grid>
-        <Grid item xs={6} md={3} className={classes.item}>
+        <Grid item xs={6} md={2} className={classes.item}>
           <Typography
             style={{
-              fontSize: '1.4rem',
+              // fontSize: '1.4rem',
               textAlign: 'center',
               marginBottom: '1rem',
             }}
           >
-            Developer Info
+            Useful Links
           </Typography>
-          <Developer />
+          <UsefulLinks />
         </Grid>
+        <Hidden smDown>
+          <Grid item xs={12} md={3} className={classes.item}>
+            <Typography
+              style={{
+                // fontSize: '1.4rem',
+                textAlign: 'center',
+                marginBottom: '1rem',
+              }}
+            >
+              Developer
+            </Typography>
+            <Developer />
+          </Grid>
+        </Hidden>
         <Hidden smDown>
           <Grid item xs={2}></Grid>
         </Hidden>
@@ -73,9 +89,12 @@ export default function Footer() {
           xs={12}
           md={12}
           className={classes.item}
-          style={{ backgroundColor: 'pink' }}
+          style={{
+            backgroundImage:
+              'linear-gradient(to right, #010038, #d82148,#010038)',
+          }}
         >
-          <Typography style={{ textAlign: 'center' }}>
+          <Typography style={{ textAlign: 'center', fontSize: '0.8rem' }}>
             &#169; 2022 Club Literati. All Rights Reserved.
           </Typography>
         </Grid>

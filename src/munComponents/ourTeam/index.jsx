@@ -130,7 +130,11 @@ export default function Team() {
                     <Typography>{member.designation}</Typography>
                     <div style={{ display: 'inline' }}>
                       {member.linkedin.length !== 0 ? (
-                        <IconButton component={Link} href={member.linkedin}>
+                        <IconButton
+                          component={Link}
+                          href={member.linkedin}
+                          disableRipple
+                        >
                           <LinkedIn
                             style={{ color: 'black' }}
                             className={classes.icon}

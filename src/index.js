@@ -2,7 +2,7 @@ import { createTheme, ThemeProvider } from '@material-ui/core';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import App from './newApp';
+import App from './App';
 import { red, yellow } from '@material-ui/core/colors';
 
 const theme = createTheme({

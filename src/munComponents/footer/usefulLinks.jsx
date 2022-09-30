@@ -1,6 +1,11 @@
 import React from 'react';
 import { makeStyles, Typography } from '@material-ui/core';
-import { Instagram, MailOutlineOutlined, Phone } from '@material-ui/icons';
+import {
+  Instagram,
+  MailOutlineOutlined,
+  Phone,
+  ChevronRight,
+} from '@material-ui/icons';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -15,17 +20,15 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export default function ContactUs() {
+export default function UsefulLinks() {
   let classes = useStyles();
   return (
     <div className={classes.root}>
       <Typography style={{ fontSize: '0.8rem' }}>
-        <Instagram className={classes.icon} /> mlritmun <br />
-        <MailOutlineOutlined
-          className={classes.icon}
-        /> mlritmun@mlrit.ac.in <br />
-        <Phone className={classes.icon} /> +91 9876543210 <br />
-        <Phone className={classes.icon} /> +91 9876543210 <br />
+        <ChevronRight className={classes.icon} /> Brochure <br />
+        <ChevronRight className={classes.icon} /> Registration <br />
+        <ChevronRight className={classes.icon} /> Committees <br />
+        <ChevronRight className={classes.icon} /> Sponsor Us <br />
       </Typography>
     </div>
   );

@@ -11,7 +11,7 @@ import LandingBG from '../../resources/images/homeBG.png';
 import AgendaBG from '../../resources/backgrounds/try7.jpg';
 
 const elements = {
-  title: 'United Nations Human Rights Commission',
+  title: 'United Nations Human Rights Council',
   colors: ['#39FF14', '#1223C2'],
   about:
     'About the committee lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet',
@@ -22,6 +22,8 @@ const elements = {
   rapporteur: Rapporteur,
   landingBG: LandingBG,
   agendaBG: AgendaBG,
+  bgGuideLink: 'https://yolo.com',
+  allocationMatrixLink: 'https://yolo.com',
 };
 
 export default function UNHRC() {
