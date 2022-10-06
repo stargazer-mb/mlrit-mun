@@ -8,7 +8,6 @@ import CountUps from './countups';
 import Gallery from './gallery';
 import PrincipalSponsor from './principalSponsor';
 import OtherSponsors from './otherSponsors';
-import ApplicationRound from './applicationRound';
 
 import bg from '../../resources/images/homeBG.png';
 
@@ -32,7 +31,6 @@ export default function Home() {
       <PrincipalSponsor />
       <OtherSponsors />
       <Gallery />
-      <ApplicationRound />
     </div>
   );
 }

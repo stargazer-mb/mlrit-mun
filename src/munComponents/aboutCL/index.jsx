@@ -87,16 +87,23 @@ export default function ClubLiterati() {
               alt='club literati'
               style={{ maxWidth: '80%', maxHeight: '30vh' }}
             />
+            <Typography
+              style={{
+                fontSize: '1.1rem',
+                fontWeight: '500',
+                marginBottom: '1rem',
+              }}
+            >
+              Communicate | Compete | Conquer
+            </Typography>
             <Typography style={{ textAlign: 'justify' }}>
-              lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum
-              dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit
-              amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem
-              ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor
-              sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
-              lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum
-              dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit
-              amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem
-              ipsum dolor sit amet lorem ipsum dolor sit amet
+              The literary club of MLR institute of technology, Club literati,
+              with the splendid motive of enlightening minds, stands against the
+              hurdles which they are likely to face without the tool of
+              communication. Club literati strives to bridge the gap between
+              literature and sciences by organizing activities that highlight
+              the importance addressing specific needs related to confidence
+              building in communication skills and personality development.
             </Typography>
             <div className={classes.rowFlex} style={{ marginBlock: '1rem' }}>
               {/* <Typography

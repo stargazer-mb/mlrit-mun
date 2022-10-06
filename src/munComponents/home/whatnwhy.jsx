@@ -7,12 +7,19 @@ import {
   Hidden,
 } from '@material-ui/core';
 
+import bg from '../../resources/backgrounds/tex12.jpg';
 import whatMUN from '../../resources/images/whatMUN.png';
 
 let useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: '#121212',
-    color: 'grey',
+    // backgroundColor: '#010038',
+    // color: 'white',
+    // backgroundColor: '#121212',
+    // color: 'grey',
+    backgroundImage: `url(${bg})`,
+    backgroundSize: 'cover',
+    backgroundAttachment: 'fixed',
+    backgroundRepeat: 'no-repeat',
     display: 'flex',
     flexDirection: 'column',
   },
