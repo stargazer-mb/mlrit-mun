@@ -8,7 +8,7 @@ import Chair from '../../resources/images/person.png';
 import ViceChair from '../../resources/images/person.png';
 import Rapporteur from '../../resources/images/person.png';
 import LandingBG from '../../resources/images/homeBG.png';
-import AgendaBG from '../../resources/backgrounds/try7.jpg';
+import AgendaBG from '../../resources/images/unhrcbg.jpg';
 
 const elements = {
   title: 'United Nations Human Rights Council',

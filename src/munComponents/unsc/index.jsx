@@ -8,7 +8,7 @@ import Chair from '../../resources/images/person.png';
 import ViceChair from '../../resources/images/person.png';
 import Rapporteur from '../../resources/images/person.png';
 import LandingBG from '../../resources/images/homeBG.png';
-import AgendaBG from '../../resources/backgrounds/try1.jpg';
+import AgendaBG from '../../resources/images/unscbg.jpg';
 
 const elements = {
   title: 'United Nations Security Council',

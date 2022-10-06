@@ -108,6 +108,22 @@ function DesktopAppBar() {
         </Button>
 
         <Button
+          component={Link}
+          disableRipple
+          disableTouchRipple
+          disableFocusRipple
+          disableElevation
+          style={{
+            background: 'transparent',
+            textTransform: 'none',
+            marginInline: '0.5rem',
+          }}
+          to='/activities'
+        >
+          <Typography className={classes.btntypo}>Activities</Typography>
+        </Button>
+
+        <Button
           disableRipple
           disableTouchRipple
           disableFocusRipple

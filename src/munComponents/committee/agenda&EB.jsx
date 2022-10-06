@@ -47,6 +47,8 @@ export default function AgendaAndEB(props) {
         backgroundSize: 'cover',
         backgroundAttachment: 'fixed',
         backgroundRepeat: 'no-repeat',
+        // backdropFilter: 'brightness(75%)',
+        // filter: 'blur(1px)',
       }}
     >
       <Grid container>

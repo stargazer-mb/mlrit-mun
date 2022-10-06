@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     // necessary for content to be below app bar
     ...theme.mixins.toolbar,
     justifyContent: 'flex-start',
-    marginTop: '4rem',
+    // marginTop: '4rem',
   },
   content: {
     flexGrow: 1,
@@ -123,6 +123,14 @@ export default function MobileDrawer() {
             onClick={handleDrawerClose}
           >
             <ListItemText>Committees</ListItemText>
+          </ListItem>
+          <Divider />
+          <ListItem
+            component={Link}
+            to='/activities'
+            onClick={handleDrawerClose}
+          >
+            <ListItemText>Activities</ListItemText>
           </ListItem>
           <Divider />
           <ListItem component={Link} to='/team' onClick={handleDrawerClose}>

@@ -33,10 +33,10 @@ let useStyles = makeStyles(() => ({
     // backgroundImage: 'linear-gradient(to right, #123456,#efefef,#12edfe)',
     // backgroundImage:'linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%)',
     // backgroundImage: 'linear-gradient(to top, #92fe9d,#00c9ff )',
-    height: '84vh',
+    height: '88vh',
     width: '98vw',
-    position: 'relative',
-    top: '-10%',
+    // position: 'relative',
+    // top: '-10%',
   },
   root: {
     height: '82vh',
@@ -66,20 +66,17 @@ let useStyles = makeStyles(() => ({
   },
   button: {
     textAlign: 'center',
-    color: '#151D3B',
+    color: 'white',
     width: '80%',
     padding: '1rem',
     marginBlock: '1rem',
     textTransform: 'none',
     textDecoration: 'none !important',
-    backgroundImage: 'linear-gradient(to right, white,white)',
-    boxShadow: '0px 0px 5px 0.5px #D82148',
-    transition: 'transform 0.1s ease-in-out',
+    background: 'linear-gradient(to left, #151D3B,#D82148)',
+    transition: 'transform 0.1s ease',
     '&:hover': {
-      backgroundImage: 'linear-gradient(to right, #151D3B,#D82148)',
-      boxShadow: 'none',
-      transform: 'scale(103%,103%)',
-      color: 'white',
+      background: 'linear-gradient(to left, #0A1931, #185ADB)',
+      transform: 'scale(105%,105%)',
     },
   },
   btntxt: {
@@ -120,10 +117,13 @@ let useStyles = makeStyles(() => ({
   underline: {
     height: '0.3em',
     width: '10em',
-    backgroundImage: 'linear-gradient(to right, #151D3B,#D82148)',
+    backgroundImage: 'linear-gradient(to left, #151D3B,#D82148)',
     marginBlock: '0.5rem',
-    animation: `$animate 3s ease`,
-    position: 'relative',
+    // animation: `$animate 3s ease`,
+    // position: 'absolute',
+    // top: '28%',
+    // left: '28%',
+    // transform: 'translate(-50%,-50%)',
   },
   '@keyframes animate': {
     '0%': {
@@ -150,7 +150,7 @@ export default function Registration() {
   return (
     <div className={classes.bg}>
       <div className={classes.root}>
-        <Grid container>
+        {/* <Grid container>
           <Grid item md={1}></Grid>
           <Grid item xs={5} md={3} className={classes.centeredDiv}>
             <img src={CLlogo} style={{ maxWidth: '80%' }} alt='club literati' />
@@ -163,7 +163,7 @@ export default function Registration() {
           <Hidden smUp>
             <Grid item xs={12} style={{ height: '1rem' }}></Grid>
           </Hidden>
-        </Grid>
+        </Grid> */}
         <div style={{ marginBlock: '0.5rem' }}>
           <Typography className={classes.btntxt} style={{ fontSize: '1.4rem' }}>
             Priority Round Registration
@@ -205,6 +205,16 @@ export default function Registration() {
                 Not a Student of MLRIT
               </Typography>
             </Button>
+            {/* <Button
+              component={Link}
+              href={'https://forms.gle/xjLUGPEUfT7LwfTF6'}
+              className={classes.button}
+              disabled
+            >
+              <Typography className={classes.btntxt}>
+                Delegation Application
+              </Typography>
+            </Button> */}
           </Grid>
           <Hidden smDown>
             <Grid item xs={12} style={{ height: '5rem' }}></Grid>

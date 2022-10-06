@@ -8,7 +8,7 @@ import Chair from '../../resources/images/person.png';
 import ViceChair from '../../resources/images/person.png';
 import Rapporteur from '../../resources/images/person.png';
 import LandingBG from '../../resources/images/homeBG.png';
-import AgendaBG from '../../resources/backgrounds/try3.jpg';
+import AgendaBG from '../../resources/images/loksabhabg.jpg';
 
 const elements = {
   title: 'Lok Sabha',
