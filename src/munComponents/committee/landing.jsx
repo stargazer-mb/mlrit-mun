@@ -26,11 +26,16 @@ const useStyles = makeStyles((theme) => ({
     height: '25vh',
   },
   applybtn: {
-    background: 'linear-gradient(to right,purple,orange)',
+    background: 'linear-gradient(to left, #151D3B,#D82148)',
     textTransform: 'none',
+    marginBlock: '1rem',
     borderRadius: '0.2rem',
+    padding: '0.5rem',
+    paddingInline: '1rem',
+    transition: 'transform 0.1s ease',
     '&:hover': {
       background: 'linear-gradient(to left, #0A1931, #185ADB)',
+      transform: 'scale(105%,105%)',
     },
   },
 }));
@@ -50,7 +55,13 @@ export default function CommitteeLanding(props) {
             variant='h2'
             colors={props.elements.colors}
           />
-          <Typography style={{ maxWidth: '80%', textAlign: 'justify' }}>
+          <Typography
+            style={{
+              maxWidth: '80%',
+              textAlign: 'justify',
+              fontSize: '0.8rem',
+            }}
+          >
             {props.elements.about}
           </Typography>
           <Button
@@ -58,7 +69,7 @@ export default function CommitteeLanding(props) {
             component={Link}
             to='/registration'
           >
-            Apply Now
+            <Typography style={{ color: 'white' }}>Register Now</Typography>
           </Button>
         </div>
       </Grid>
@@ -67,7 +78,7 @@ export default function CommitteeLanding(props) {
           <img
             src={props.elements.logo}
             alt='Committee Logo'
-            style={{ maxWidth: '100%' }}
+            style={{ maxWidth: '80%' }}
           ></img>
         </div>
       </Grid>

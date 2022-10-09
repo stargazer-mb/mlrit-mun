@@ -17,8 +17,8 @@ const useStyles = makeStyles(() => ({
   },
   img: {
     maxWidth: '80%',
-    margin: '2rem',
-    padding: '1rem',
+    marginBlock: '2rem',
+    // padding: '1rem',
   },
   button: {
     textAlign: 'center',
@@ -57,16 +57,24 @@ export default function AgendaAndEB(props) {
         </Hidden>
         <Grid item xs={12} md={10} style={{ marginBottom: '1rem' }}>
           <Grid container>
-            <Grid item xs={12} md={12} className={classes.centeredDiv}>
-              <img
-                src={props.elements.agenda}
-                alt='committee agenda'
-                style={{ width: '90%' }}
-              />
-            </Grid>
-            <Grid item xs={12} className={classes.centeredDiv}>
+            {props.elements.agenda.length !== 0 ? (
+              <Grid item xs={12} md={12} className={classes.centeredDiv}>
+                <img
+                  src={props.elements.agenda}
+                  alt='committee agenda'
+                  style={{
+                    maxWidth: '98%',
+                    maxHeight: '60vh',
+                    marginBlock: '1rem',
+                  }}
+                />
+              </Grid>
+            ) : (
+              ''
+            )}
+            {/* <Grid item xs={12} className={classes.centeredDiv}>
               <Typography>Executive Board</Typography>
-            </Grid>
+            </Grid> */}
             <Grid item xs={12} md={4} className={classes.centeredDiv}>
               <img
                 src={props.elements.chair}

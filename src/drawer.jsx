@@ -125,12 +125,8 @@ export default function MobileDrawer() {
             <ListItemText>Committees</ListItemText>
           </ListItem>
           <Divider />
-          <ListItem
-            component={Link}
-            to='/activities'
-            onClick={handleDrawerClose}
-          >
-            <ListItemText>Activities</ListItemText>
+          <ListItem component={Link} to='/features' onClick={handleDrawerClose}>
+            <ListItemText>Features</ListItemText>
           </ListItem>
           <Divider />
           <ListItem component={Link} to='/team' onClick={handleDrawerClose}>

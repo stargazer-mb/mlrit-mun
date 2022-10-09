@@ -26,21 +26,9 @@ import bgImg from '../../resources/backgrounds/bg2.jpg';
 import '../../App.css';
 
 let useStyles = makeStyles(() => ({
-  bg: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    // backgroundImage: 'linear-gradient(to right, #123456,#efefef,#12edfe)',
-    // backgroundImage:'linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%)',
-    // backgroundImage: 'linear-gradient(to top, #92fe9d,#00c9ff )',
+  root: {
     height: '88vh',
     width: '98vw',
-    // position: 'relative',
-    // top: '-10%',
-  },
-  root: {
-    height: '82vh',
-    width: '96vw',
     backgroundColor: 'white',
     borderRadius: '0.5rem',
     // boxShadow: '#92fe9d 0px -20px 20px -5px, #00c9ff 0px 20px 20px -5px',
@@ -118,7 +106,7 @@ let useStyles = makeStyles(() => ({
     height: '0.3em',
     width: '10em',
     backgroundImage: 'linear-gradient(to left, #151D3B,#D82148)',
-    marginBlock: '0.5rem',
+    marginBlock: '1rem',
     // animation: `$animate 3s ease`,
     // position: 'absolute',
     // top: '28%',
@@ -148,25 +136,164 @@ let useStyles = makeStyles(() => ({
 export default function Registration() {
   let classes = useStyles();
   return (
-    <div className={classes.bg}>
+    <div>
+      <Grid container>
+        <Hidden smDown>
+          <Grid item xs={2}>
+            <div style={{ position: 'relative', height: '100%' }}>
+              <div
+                style={{
+                  position: 'absolute',
+                  height: '150px',
+                  width: '150px',
+                  backgroundColor: '#151d38',
+                  transform: 'rotate(45deg)',
+                  left: '-47%',
+                  top: '10%',
+                  // opacity: '0.75',
+                  // zIndex: '2',
+                }}
+              ></div>
+              <div
+                style={{
+                  position: 'absolute',
+                  height: '150px',
+                  width: '150px',
+                  backgroundColor: '#d82148',
+                  transform: 'rotate(45deg)',
+                  left: '-47%',
+                  top: '20%',
+                  zIndex: '2',
+                  // opacity: '0.5',
+                }}
+              ></div>
+              <div
+                style={{
+                  position: 'absolute',
+                  height: '150px',
+                  width: '150px',
+                  backgroundColor: '#151d38',
+                  transform: 'rotate(45deg)',
+                  left: '-47%',
+                  top: '30%',
+                  opacity: '0.75',
+                  zIndex: '3',
+                }}
+              ></div>
+              <div
+                style={{
+                  position: 'absolute',
+                  height: '150px',
+                  width: '150px',
+                  backgroundColor: '#d82148',
+                  transform: 'rotate(45deg)',
+                  left: '-47%',
+                  top: '40%',
+                  zIndex: '4',
+                  opacity: '0.75',
+                }}
+              ></div>
+            </div>
+          </Grid>
+        </Hidden>
+        <Grid item xs={12} md={8} className={classes.root}>
+          <div>
+            <Typography
+              className={classes.btntxt}
+              style={{ fontSize: '1.4rem' }}
+            >
+              First Round Registration
+            </Typography>
+          </div>
+          <div className={classes.underline}></div>
+          <Grid container style={{ marginTop: '1.5rem' }}>
+            <Grid item xs={12} md={6} className={classes.centeredDiv}>
+              <img src={QR} style={{ maxWidth: '75%' }} alt='UPI QR' />
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              md={6}
+              style={{ marginBlock: '1rem' }}
+              className={classes.centeredDiv}
+            >
+              <Button
+                component={Link}
+                href={'https://forms.gle/ALt86irT94i5vugi7'}
+                className={classes.button}
+              >
+                <Typography className={classes.btntxt}>
+                  A Student of MLRIT
+                </Typography>
+              </Button>
+              <Button
+                component={Link}
+                href={'https://forms.gle/DmHb2A2EDV5Vg1yo7'}
+                className={classes.button}
+              >
+                <Typography className={classes.btntxt}>
+                  Not a Student of MLRIT
+                </Typography>
+              </Button>
+            </Grid>
+          </Grid>
+          <div style={{ marginTop: '1rem' }}>
+            <Typography>
+              For Queries <br /> Sudhansh [ +91 79958 31972 ] <br /> Raj Kumar [
+              +91 89785 01781 ]
+            </Typography>
+          </div>
+        </Grid>
+        <Hidden smDown>
+          <Grid item xs={2}>
+            <div
+              style={{
+                position: 'relative',
+                height: '100%',
+                width: '100%',
+                overflow: 'hidden',
+              }}
+            >
+              <div
+                style={{
+                  position: 'absolute',
+                  height: '150px',
+                  width: '150px',
+                  backgroundColor: '#151d38',
+                  transform: 'rotate(45deg)',
+                  left: '85%',
+                  top: '60%',
+                  zIndex: '2',
+                  // opacity: '0.75',
+                }}
+              ></div>
+              <div
+                style={{
+                  position: 'absolute',
+                  height: '150px',
+                  width: '150px',
+                  backgroundColor: '#d82148',
+                  transform: 'rotate(45deg)',
+                  left: '85%',
+                  top: '70%',
+                  // zIndex: '2',
+                  // opacity: '0.5',
+                }}
+              ></div>
+            </div>
+          </Grid>
+        </Hidden>
+      </Grid>
+    </div>
+  );
+}
+
+{
+  /* <div className={classes.bg}>
       <div className={classes.root}>
-        {/* <Grid container>
-          <Grid item md={1}></Grid>
-          <Grid item xs={5} md={3} className={classes.centeredDiv}>
-            <img src={CLlogo} style={{ maxWidth: '80%' }} alt='club literati' />
-          </Grid>
-          <Grid item xs={2} md={4}></Grid>
-          <Grid item xs={5} md={3} className={classes.centeredDiv}>
-            <img src={MLRITlogo} style={{ maxWidth: '80%' }} alt='MLRIT' />
-          </Grid>
-          <Grid item md={1}></Grid>
-          <Hidden smUp>
-            <Grid item xs={12} style={{ height: '1rem' }}></Grid>
-          </Hidden>
-        </Grid> */}
         <div style={{ marginBlock: '0.5rem' }}>
           <Typography className={classes.btntxt} style={{ fontSize: '1.4rem' }}>
-            Priority Round Registration
+            First Round Registration
           </Typography>
         </div>
         <div className={classes.underline}></div>
@@ -205,7 +332,7 @@ export default function Registration() {
                 Not a Student of MLRIT
               </Typography>
             </Button>
-            {/* <Button
+             <Button
               component={Link}
               href={'https://forms.gle/xjLUGPEUfT7LwfTF6'}
               className={classes.button}
@@ -214,13 +341,12 @@ export default function Registration() {
               <Typography className={classes.btntxt}>
                 Delegation Application
               </Typography>
-            </Button> */}
+            </Button> 
           </Grid>
           <Hidden smDown>
             <Grid item xs={12} style={{ height: '5rem' }}></Grid>
           </Hidden>
         </Grid>
       </div>
-    </div>
-  );
+    </div> */
 }

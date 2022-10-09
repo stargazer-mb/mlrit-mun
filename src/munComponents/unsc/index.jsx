@@ -3,10 +3,10 @@ import React from 'react';
 import Committee from '../committee';
 
 import Logo from '../../resources/images/unscLogo.png';
-import Agenda from '../../resources/images/agenda.png';
-import Chair from '../../resources/images/person.png';
-import ViceChair from '../../resources/images/person.png';
-import Rapporteur from '../../resources/images/person.png';
+import Agenda from '../../resources/images/unsc agenda.png';
+import Chair from '../../resources/images/EB/10.png';
+import ViceChair from '../../resources/images/EB/11.png';
+import Rapporteur from '../../resources/images/EB/12.png';
 import LandingBG from '../../resources/images/homeBG.png';
 import AgendaBG from '../../resources/images/unscbg.jpg';
 

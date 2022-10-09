@@ -57,7 +57,7 @@ export default function ApplicationRound() {
             backdropFilter: 'contrast(95%)',
           }}
         >
-          Priority Round Applications Open Now! Hurry Up Delegates!
+          First Round Applications Open Now! Hurry Up Delegates!
         </Typography>
         <Button
           className={classes.applybtn}

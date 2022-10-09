@@ -3,10 +3,10 @@ import React from 'react';
 import Committee from '../committee';
 
 import Logo from '../../resources/images/lsLogo.png';
-import Agenda from '../../resources/images/agenda.png';
-import Chair from '../../resources/images/person.png';
-import ViceChair from '../../resources/images/person.png';
-import Rapporteur from '../../resources/images/person.png';
+import Agenda from '../../resources/images/loksabha agenda.png';
+import Chair from '../../resources/images/EB/1.png';
+import ViceChair from '../../resources/images/EB/2.png';
+import Rapporteur from '../../resources/images/EB/3.png';
 import LandingBG from '../../resources/images/homeBG.png';
 import AgendaBG from '../../resources/images/loksabhabg.jpg';
 
