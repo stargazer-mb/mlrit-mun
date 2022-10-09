@@ -3,10 +3,10 @@ import React from 'react';
 import Committee from '../committee';
 
 import Logo from '../../resources/images/unhrcLogo.png';
-import Agenda from '../../resources/images/agenda.png';
-import Chair from '../../resources/images/person.png';
-import ViceChair from '../../resources/images/person.png';
-import Rapporteur from '../../resources/images/person.png';
+import Agenda from '../../resources/images/unhrc agenda.png';
+import Chair from '../../resources/images/EB/7.png';
+import ViceChair from '../../resources/images/EB/8.png';
+import Rapporteur from '../../resources/images/EB/9.png';
 import LandingBG from '../../resources/images/homeBG.png';
 import AgendaBG from '../../resources/images/unhrcbg.jpg';
 

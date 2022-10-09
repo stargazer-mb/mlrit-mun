@@ -3,9 +3,12 @@ import { Grid, Hidden, Typography, Link, IconButton } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { Instagram, MailOutline, YouTube, Facebook } from '@material-ui/icons';
 
-import Event from './event';
-
 import CLlogo from '../../resources/images/clblit.png';
+import LitFestLogo from '../../resources/images/LitFest Logo.png';
+import MUNLogo from '../../resources/images/mlrit-mun logo.png';
+import TalkMastersLogo from '../../resources/images/talkmasters logo.png';
+import TEDxMLRITLogo from '../../resources/images/tedlogo.png';
+import MurderMystLogo from '../../resources/images/mmlogo.png';
 
 const useStyles = makeStyles((theme) => ({
   aboutCLRoot: {
@@ -16,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
+    marginBlock: '1rem',
   },
   rowFlex: {
     display: 'flex',
@@ -64,6 +68,12 @@ const useStyles = makeStyles((theme) => ({
       borderRadius: '0.6rem',
     },
   },
+  underline: {
+    height: '0.3em',
+    width: '10em',
+    backgroundImage: 'linear-gradient(to left, #151D3B,#D82148)',
+    marginBlock: '1.5rem',
+  },
 }));
 
 export default function ClubLiterati() {
@@ -78,7 +88,36 @@ export default function ClubLiterati() {
     <div className={classes.aboutCLRoot}>
       <Grid container>
         <Hidden smDown>
-          <Grid item xs={2}></Grid>
+          <Grid item xs={2}>
+            <div style={{ position: 'relative', height: '100%' }}>
+              <div
+                style={{
+                  position: 'absolute',
+                  height: '150px',
+                  width: '150px',
+                  backgroundColor: '#151d38',
+                  transform: 'rotate(45deg)',
+                  left: '-60%',
+                  top: '10%',
+                  // opacity: '0.75',
+                  zIndex: '2',
+                }}
+              ></div>
+              <div
+                style={{
+                  position: 'absolute',
+                  height: '150px',
+                  width: '150px',
+                  backgroundColor: '#d82148',
+                  transform: 'rotate(45deg)',
+                  left: '-50%',
+                  top: '10%',
+                  // zIndex: '2',
+                  // opacity: '0.5',
+                }}
+              ></div>
+            </div>
+          </Grid>
         </Hidden>
         <Grid item xs={12} md={8}>
           <div className={classes.coulmnFlex}>
@@ -89,13 +128,15 @@ export default function ClubLiterati() {
             />
             <Typography
               style={{
-                fontSize: '1.1rem',
-                fontWeight: '500',
-                marginBottom: '1rem',
+                // fontSize: '1.1rem',
+                // fontWeight: '600',
+                // marginBottom: '1rem',
+                fontFamily: 'Poppins,sans-serif',
               }}
             >
               Communicate | Compete | Conquer
             </Typography>
+            <div className={classes.underline}></div>
             <Typography style={{ textAlign: 'justify' }}>
               The literary club of MLR institute of technology, Club literati,
               with the splendid motive of enlightening minds, stands against the
@@ -105,13 +146,14 @@ export default function ClubLiterati() {
               the importance addressing specific needs related to confidence
               building in communication skills and personality development.
             </Typography>
-            <div className={classes.rowFlex} style={{ marginBlock: '1rem' }}>
-              {/* <Typography
+            <div className={classes.underline}></div>
+            <div className={classes.rowFlex} style={{ marginBottom: '2rem' }}>
+              <Typography
                 variant='h6'
                 style={{ fontFamily: 'Poppins, sans-serif' }}
               >
-                Follow Us
-              </Typography> */}
+                Follow us on
+              </Typography>
               <Link
                 href='https://instagram.com/mlrclubliterati?utm_medium=copy_link'
                 target='_blank'
@@ -149,40 +191,111 @@ export default function ClubLiterati() {
                 <MailOutline fontSize='large' className={classes.MailIcon} />
               </IconButton>
             </div>
-          </div>
-          <div
-            style={{
-              // height: '80vh',
-              backgroundColor: 'aqua',
-              marginBottom: '2rem',
-            }}
-            className={classes.coulmnFlex}
-          >
-            <Typography>Our Events</Typography>
-            <Grid container>
-              <Grid item xs={12} md={6} className={classes.coulmnFlex}>
-                <Typography>MLRIT-MUN Logo</Typography>
+            <div
+              style={{
+                // height: '80vh',
+                // backgroundColor: 'aqua',
+                marginTop: '2rem',
+              }}
+              className={classes.coulmnFlex}
+            >
+              <Typography
+                style={{
+                  fontSize: '1.5rem',
+                  fontWeight: '600',
+                  // marginBottom: '2rem',
+                }}
+              >
+                Our Events
+              </Typography>
+              <div className={classes.underline}></div>
+              <Grid container>
+                <Grid item xs={12} md={4} className={classes.coulmnFlex}>
+                  <img
+                    src={TEDxMLRITLogo}
+                    alt='TEDxMLRIT Logo'
+                    style={{ maxWidth: '80%', maxHeight: '30vh' }}
+                  />
+                </Grid>
+                <Grid item xs={12} md={4} className={classes.coulmnFlex}>
+                  <img
+                    src={MUNLogo}
+                    alt='MLRIT-MUN Logo'
+                    style={{ maxWidth: '80%', maxHeight: '30vh' }}
+                  />
+                </Grid>
+                <Grid item xs={12} md={4} className={classes.coulmnFlex}>
+                  <img
+                    src={LitFestLogo}
+                    alt='MLRIT Literary Festival'
+                    style={{ maxWidth: '40vw', maxHeight: '25vh' }}
+                  />
+                </Grid>
+                <Grid item xs={12} md={4} className={classes.coulmnFlex}>
+                  <img
+                    src={TalkMastersLogo}
+                    alt='MLRIT Talkmasters'
+                    style={{ maxWidth: '50vw', maxHeight: '30vh' }}
+                  />
+                </Grid>
+                <Grid item xs={12} md={4} className={classes.coulmnFlex}>
+                  <img
+                    src={MurderMystLogo}
+                    alt='Murder Mystery'
+                    style={{
+                      maxWidth: '40vw',
+                      maxHeight: '20vh',
+                      // marginTop: '2rem',
+                    }}
+                  />
+                </Grid>
+                <Grid item xs={12} md={4} className={classes.coulmnFlex}>
+                  <Typography style={{ textAlign: 'center' }}>
+                    & many other events. <br /> P.S. Open for collaborations
+                  </Typography>
+                </Grid>
               </Grid>
-              <Grid item xs={12} md={6} className={classes.coulmnFlex}>
-                <Typography>TEDxMLRIT Logo</Typography>
-              </Grid>
-              <Grid item xs={12} md={6} className={classes.coulmnFlex}>
-                <Typography>MLRIT Literary Festival Logo</Typography>
-              </Grid>
-              <Grid item xs={12} md={6} className={classes.coulmnFlex}>
-                <Typography>Talkmasters MLRIT Logo</Typography>
-              </Grid>
-              <Grid item xs={12} md={6} className={classes.coulmnFlex}>
-                <Typography>Murder Mystery Logo</Typography>
-              </Grid>
-              <Grid item xs={12} md={6} className={classes.coulmnFlex}>
-                <Typography>VillainCon Logo</Typography>
-              </Grid>
-            </Grid>
+            </div>
           </div>
         </Grid>
         <Hidden smDown>
-          <Grid item xs={2}></Grid>
+          <Grid item xs={2}>
+            <div
+              style={{
+                position: 'relative',
+                height: '100%',
+                width: '100%',
+                overflow: 'hidden',
+              }}
+            >
+              <div
+                style={{
+                  position: 'absolute',
+                  height: '150px',
+                  width: '150px',
+                  backgroundColor: '#151d38',
+                  transform: 'rotate(45deg)',
+                  left: '90%',
+                  top: '65%',
+                  zIndex: '2',
+                  // opacity: '0.75',
+                }}
+              ></div>
+              <div
+                style={{
+                  position: 'absolute',
+                  height: '150px',
+                  width: '150px',
+                  backgroundColor: '#d82148',
+                  transform: 'rotate(45deg)',
+                  left: '80%',
+                  top: '65%',
+                  // zIndex: '2',
+                  // opacity: '0.5',
+                }}
+              ></div>
+            </div>
+          </Grid>
         </Hidden>
       </Grid>
     </div>

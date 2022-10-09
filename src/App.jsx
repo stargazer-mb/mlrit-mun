@@ -44,8 +44,10 @@ const useStyles = makeStyles((theme) => ({
   },
   btntypo: {
     color: 'black',
+    // fontWeight: '500',
+    fontFamily: 'Raleway,sans-serif',
     transition: 'width 0.5s, height 0.5s, transform 0.1s',
-    transitionTimingFunction: 'linear',
+    transitionTimingFunction: 'ease',
     '&:hover': {
       color: 'green',
       transform: 'scale(1.2,1.2)',
@@ -118,9 +120,9 @@ function DesktopAppBar() {
             textTransform: 'none',
             marginInline: '0.5rem',
           }}
-          to='/activities'
+          to='/features'
         >
-          <Typography className={classes.btntypo}>Activities</Typography>
+          <Typography className={classes.btntypo}>Features</Typography>
         </Button>
 
         <Button
@@ -152,7 +154,7 @@ function DesktopAppBar() {
           component={Link}
           to='/clubliterati'
         >
-          <Typography className={classes.btntypo}>CLub Literati</Typography>
+          <Typography className={classes.btntypo}>Club Literati</Typography>
         </Button>
 
         <Button
@@ -160,7 +162,11 @@ function DesktopAppBar() {
           component={Link}
           to='/registration'
         >
-          <Typography style={{ color: 'white' }}>Register</Typography>
+          <Typography
+            style={{ color: 'white', fontFamily: 'Raleway,sans-serif' }}
+          >
+            Register
+          </Typography>
         </Button>
       </Toolbar>
     </AppBar>

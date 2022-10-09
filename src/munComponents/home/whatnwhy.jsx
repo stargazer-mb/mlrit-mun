@@ -35,6 +35,9 @@ let useStyles = makeStyles((theme) => ({
   },
   txtcmpnt: {},
   imgcmpnt: {},
+  content: {
+    // fontFamily: 'Garet,sans-serif',
+  },
   heading: {
     // animation: '$slideLeft 2s ease-in',
     // animationIterationCount: 'infinite',

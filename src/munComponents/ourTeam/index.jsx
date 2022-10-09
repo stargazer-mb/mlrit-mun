@@ -113,7 +113,75 @@ export default function Team() {
     <div className={classes.teamRoot}>
       <Grid container>
         <Hidden smDown>
-          <Grid item xs={2}></Grid>
+          <Grid item xs={2}>
+            <div style={{ position: 'relative', height: '100%' }}>
+              <div
+                style={{
+                  position: 'absolute',
+                  height: '150px',
+                  width: '150px',
+                  backgroundColor: '#d82148',
+                  transform: 'rotate(45deg)',
+                  left: '-47%',
+                  top: '10%',
+                  // opacity: '0.75',
+                  // zIndex: '2',
+                }}
+              ></div>
+              <div
+                style={{
+                  position: 'absolute',
+                  height: '150px',
+                  width: '150px',
+                  backgroundColor: '#d82148',
+                  transform: 'rotate(45deg)',
+                  left: '-47%',
+                  top: '20%',
+                  zIndex: '2',
+                  opacity: '0.75',
+                }}
+              ></div>
+              <div
+                style={{
+                  position: 'absolute',
+                  height: '150px',
+                  width: '150px',
+                  backgroundColor: '#d82148',
+                  transform: 'rotate(45deg)',
+                  left: '-47%',
+                  top: '30%',
+                  opacity: '0.5',
+                  zIndex: '3',
+                }}
+              ></div>
+              <div
+                style={{
+                  position: 'absolute',
+                  height: '150px',
+                  width: '150px',
+                  backgroundColor: '#d82148',
+                  transform: 'rotate(45deg)',
+                  left: '-47%',
+                  top: '40%',
+                  zIndex: '4',
+                  opacity: '0.25',
+                }}
+              ></div>
+              <div
+                style={{
+                  position: 'absolute',
+                  height: '150px',
+                  width: '150px',
+                  backgroundColor: '#d82148',
+                  transform: 'rotate(45deg)',
+                  left: '-47%',
+                  top: '50%',
+                  zIndex: '5',
+                  opacity: '0.125',
+                }}
+              ></div>
+            </div>
+          </Grid>
         </Hidden>
         <Grid item xs={12} md={8}>
           <Grid container>
@@ -160,10 +228,85 @@ export default function Team() {
             })}
           </Grid>
         </Grid>
+        <Hidden smDown>
+          <Grid item xs={2}>
+            <div
+              style={{
+                position: 'relative',
+                height: '100%',
+                width: '100%',
+                overflow: 'hidden',
+              }}
+            >
+              <div
+                style={{
+                  position: 'absolute',
+                  height: '150px',
+                  width: '150px',
+                  backgroundColor: '#151d38',
+                  transform: 'rotate(45deg)',
+                  left: '80%',
+                  top: '40%',
+                  // zIndex: '2',
+                  opacity: '0.125',
+                }}
+              ></div>
+              <div
+                style={{
+                  position: 'absolute',
+                  height: '150px',
+                  width: '150px',
+                  backgroundColor: '#151d38',
+                  transform: 'rotate(45deg)',
+                  left: '80%',
+                  top: '50%',
+                  // zIndex: '2',
+                  opacity: '0.25',
+                }}
+              ></div>
+              <div
+                style={{
+                  position: 'absolute',
+                  height: '150px',
+                  width: '150px',
+                  backgroundColor: '#151d38',
+                  transform: 'rotate(45deg)',
+                  left: '80%',
+                  top: '60%',
+                  // zIndex: '2',
+                  opacity: '0.5',
+                }}
+              ></div>
+              <div
+                style={{
+                  position: 'absolute',
+                  height: '150px',
+                  width: '150px',
+                  backgroundColor: '#151d38',
+                  transform: 'rotate(45deg)',
+                  left: '80%',
+                  top: '70%',
+                  // zIndex: '2',
+                  opacity: '0.75',
+                }}
+              ></div>
+              <div
+                style={{
+                  position: 'absolute',
+                  height: '150px',
+                  width: '150px',
+                  backgroundColor: '#151d38',
+                  transform: 'rotate(45deg)',
+                  left: '80%',
+                  top: '80%',
+                  // zIndex: '2',
+                  // opacity: '0.75',
+                }}
+              ></div>
+            </div>
+          </Grid>
+        </Hidden>
       </Grid>
-      <Hidden smDown>
-        <Grid item xs={2}></Grid>
-      </Hidden>
     </div>
   );
 }

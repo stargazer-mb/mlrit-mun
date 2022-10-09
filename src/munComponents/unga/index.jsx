@@ -3,10 +3,10 @@ import React from 'react';
 import Committee from '../committee';
 
 import Logo from '../../resources/images/ungaLogo.png';
-import Agenda from '../../resources/images/agenda.png';
-import Chair from '../../resources/images/person.png';
-import ViceChair from '../../resources/images/person.png';
-import Rapporteur from '../../resources/images/person.png';
+import Agenda from '../../resources/images/unga agenda.png';
+import Chair from '../../resources/images/EB/4.png';
+import ViceChair from '../../resources/images/EB/5.png';
+import Rapporteur from '../../resources/images/EB/6.png';
 import LandingBG from '../../resources/images/homeBG.png';
 import AgendaBG from '../../resources/images/ungabg.jpg';
 

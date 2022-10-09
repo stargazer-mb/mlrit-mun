@@ -3,10 +3,9 @@ import React from 'react';
 import Committee from '../committee';
 
 import Logo from '../../resources/images/ipLogo.png';
-import Agenda from '../../resources/images/agenda.png';
-import Chair from '../../resources/images/person.png';
-import ViceChair from '../../resources/images/person.png';
-import Rapporteur from '../../resources/images/person.png';
+import Chair from '../../resources/images/EB/13.png';
+import ViceChair from '../../resources/images/EB/14.png';
+import Rapporteur from '../../resources/images/EB/15.png';
 import LandingBG from '../../resources/images/homeBG.png';
 import AgendaBG from '../../resources/images/ipbg.jpg';
 
@@ -16,7 +15,7 @@ const elements = {
   about:
     'About the committee lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet',
   logo: Logo,
-  agenda: Agenda,
+  agenda: '',
   chair: Chair,
   vicechair: ViceChair,
   rapporteur: Rapporteur,
