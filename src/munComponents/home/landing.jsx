@@ -7,7 +7,8 @@ import FloatingSquares from '../../components/Reusable Components/Floating Squar
 import AnimatedText from '../../components/Reusable Components/animatedText.jsx';
 
 import TitleSponsor from '../../resources/images/Title Sponsor.png';
-import munLogo from '../../resources/images/MUN logo.png';
+import PowerSponsor from '../../resources/images/TIC logo.png';
+import munLogo from '../../resources/images/title logo.png';
 import bg from '../../resources/images/homeBG.png';
 
 const useStyles = makeStyles((theme) => ({
@@ -27,7 +28,12 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
   },
   tsLogo: {
-    height: '25vh',
+    maxHeight: '30vh',
+    maxWidth: '30vh',
+  },
+  psLogo: {
+    maxHeight: '20vh',
+    maxWidth: '20vh',
   },
   applybtn: {
     background: 'linear-gradient(to left, #151D3B,#D82148)',
@@ -54,13 +60,19 @@ export default function Landing() {
       </Hidden>
       <Grid item xs={12} md={5} className={classes.divCentercntnt}>
         <div className={classes.divCentercntnt}>
-          <img
-            src={TitleSponsor}
-            alt='Title Sponsor'
-            className={classes.tsLogo}
-          ></img>
-          <Typography>Presents</Typography>
-          <Typography variant='h4'>The Fifth Edition of</Typography>
+          <img src={TitleSponsor} alt='Stuzee' className={classes.tsLogo}></img>
+          <Typography style={{ fontSize: '1.2rem', marginBlock: '0.5rem' }}>
+            Presents
+          </Typography>
+          <Typography
+            style={{
+              fontSize: '1.6rem',
+              marginTop: '0.5rem',
+              marginBottom: '-0.5rem',
+            }}
+          >
+            The Fifth Edition of
+          </Typography>
           <AnimatedText
             txt='MLRIT-MUN'
             variant='h1'
@@ -73,25 +85,37 @@ export default function Landing() {
               '#0C1E7F',
             ]}
           />
-          <Button
+          <Typography style={{ marginBlock: '0.5rem' }}>Powered by</Typography>
+          <img
+            src={PowerSponsor}
+            alt='The Indian Conclave'
+            className={classes.psLogo}
+          ></img>
+          {/* <Button
             className={classes.applybtn}
             component={Link}
             to='/registration'
           >
             <Typography style={{ color: 'white' }}>Register Now</Typography>
-          </Button>
+          </Button> */}
         </div>
-      </Grid>
-      <Grid item xs={12} md={5} className={classes.divCentercntnt}>
-        <div className={classes.divCentercntnt}>
-          <img
-            src={munLogo}
-            alt='MLRIT MUN Main Logo'
-            style={{ maxWidth: '80%' }}
-          ></img>
-        </div>
+        <Hidden smUp>
+          <Typography style={{ marginTop: '1rem' }}>
+            11th - 13th November, 2022
+          </Typography>
+        </Hidden>
       </Grid>
       <Hidden smDown>
+        <Grid item xs={12} md={5} className={classes.divCentercntnt}>
+          <div className={classes.divCentercntnt}>
+            <img
+              src={munLogo}
+              alt='MLRIT MUN Main Logo'
+              style={{ maxWidth: '80%' }}
+            ></img>
+          </div>
+          <Typography>11th - 13th November, 2022</Typography>
+        </Grid>
         <Grid item md={1}></Grid>
       </Hidden>
     </Grid>

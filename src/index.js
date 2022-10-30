@@ -5,6 +5,8 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import { red, yellow } from '@material-ui/core/colors';
 
+// import Registration from './munComponents/registration';
+
 const theme = createTheme({
   palette: {
     primary: {

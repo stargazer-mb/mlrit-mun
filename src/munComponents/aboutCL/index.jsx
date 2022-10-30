@@ -80,7 +80,7 @@ export default function ClubLiterati() {
   let classes = useStyles();
 
   function copyToClipboard() {
-    navigator.clipboard.writeText('mlrlitmun@mlrit.ac.in');
+    navigator.clipboard.writeText('clubliterati@mlrit.ac.in');
     alert('Mail Address Copied ');
   }
 
