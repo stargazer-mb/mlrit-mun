@@ -52,10 +52,30 @@ let useStyles = makeStyles(() => ({
     flexDirection: 'row',
     textAlign: 'center',
   },
+  alert: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    display: 'flex',
+    marginBottom: '2rem',
+    border: '1px solid black',
+    backgroundColor: 'white',
+    color: 'black',
+    // animation: `$alertAnimate 5s infinite`,
+  },
+  '@keyframes alertAnimate': {
+    from: {
+      backgroundColor: 'black',
+      color: 'white',
+    },
+    to: {
+      backgroundColor: 'white',
+      color: 'black',
+    },
+  },
   button: {
     textAlign: 'center',
     color: 'white',
-    width: '80%',
+    width: '75%',
     padding: '1rem',
     marginBlock: '1rem',
     textTransform: 'none',
@@ -107,6 +127,7 @@ let useStyles = makeStyles(() => ({
     width: '10em',
     backgroundImage: 'linear-gradient(to left, #151D3B,#D82148)',
     marginBlock: '1rem',
+    // position: 'absolute',
     // animation: `$animate 3s ease`,
     // position: 'absolute',
     // top: '28%',
@@ -136,7 +157,13 @@ let useStyles = makeStyles(() => ({
 export default function Registration() {
   let classes = useStyles();
   return (
-    <div>
+    <div
+      style={{
+        backgroundImage: 'linear-gradient(white,white)',
+        color: 'black',
+        colorScheme: 'only light',
+      }}
+    >
       <Grid container>
         <Hidden smDown>
           <Grid item xs={2}>
@@ -197,18 +224,57 @@ export default function Registration() {
           </Grid>
         </Hidden>
         <Grid item xs={12} md={8} className={classes.root}>
-          <div>
+          {/* <div>
+            <img
+              src={MUNlogo}
+              alt='logo'
+              style={{ maxHeight: '30vh', maxWidth: '75vw', marginTop: '2rem' }}
+            />
+          </div> */}
+          <div className={classes.alert}>
             <Typography
-              className={classes.btntxt}
-              style={{ fontSize: '1.4rem' }}
+              style={{
+                paddingInline: '1rem',
+                paddingBlock: '0.5rem',
+                fontWeight: '600',
+              }}
             >
-              First Round Registration
+              First Round Allocations are out!
             </Typography>
           </div>
-          <div className={classes.underline}></div>
-          <Grid container style={{ marginTop: '1.5rem' }}>
-            <Grid item xs={12} md={6} className={classes.centeredDiv}>
-              <img src={QR} style={{ maxWidth: '75%' }} alt='UPI QR' />
+          <Grid container style={{ marginTop: '1rem' }}>
+            {/* <img src={QR} style={{ maxWidth: '75%' }} alt='UPI QR' /> */}
+            <Grid
+              item
+              xs={12}
+              md={6}
+              style={{
+                marginBlock: '1rem',
+                display: 'flex',
+                // justifyContent: 'center',
+                alignItems: 'center',
+                flexDirection: 'column',
+                textAlign: 'center',
+              }}
+            >
+              <div>
+                <Typography
+                  className={classes.btntxt}
+                  style={{ fontSize: '1.4rem' }}
+                >
+                  Delegation Application
+                </Typography>
+              </div>
+              <span className={classes.underline}></span>
+              <Button
+                component={Link}
+                href={'https://forms.gle/8k67GXQrMAfqZjQT7'}
+                className={classes.button}
+              >
+                <Typography className={classes.btntxt}>
+                  Click to Apply
+                </Typography>
+              </Button>
             </Grid>
             <Grid
               item
@@ -217,6 +283,15 @@ export default function Registration() {
               style={{ marginBlock: '1rem' }}
               className={classes.centeredDiv}
             >
+              <div>
+                <Typography
+                  className={classes.btntxt}
+                  style={{ fontSize: '1.4rem' }}
+                >
+                  Dynamic Round Application
+                </Typography>
+              </div>
+              <span className={classes.underline}></span>
               <Button
                 component={Link}
                 href={'https://forms.gle/ALt86irT94i5vugi7'}
@@ -237,12 +312,12 @@ export default function Registration() {
               </Button>
             </Grid>
           </Grid>
-          <div style={{ marginTop: '1rem' }}>
+          {/* <div style={{ marginTop: '1rem' }}>
             <Typography>
               For Queries <br /> Sudhansh [ +91 79958 31972 ] <br /> Raj Kumar [
               +91 89785 01781 ]
             </Typography>
-          </div>
+          </div> */}
         </Grid>
         <Hidden smDown>
           <Grid item xs={2}>
@@ -286,67 +361,4 @@ export default function Registration() {
       </Grid>
     </div>
   );
-}
-
-{
-  /* <div className={classes.bg}>
-      <div className={classes.root}>
-        <div style={{ marginBlock: '0.5rem' }}>
-          <Typography className={classes.btntxt} style={{ fontSize: '1.4rem' }}>
-            First Round Registration
-          </Typography>
-        </div>
-        <div className={classes.underline}></div>
-        <Grid container style={{ marginTop: '1.5rem' }}>
-          <Hidden smDown>
-            <Grid item md={2}></Grid>
-          </Hidden>
-          <Grid item xs={12} md={4} className={classes.centeredDiv}>
-            <img src={QR} style={{ maxWidth: '75%' }} alt='UPI QR' />
-          </Grid>
-          <Hidden smUp>
-            <Grid item xs={12} style={{ height: '2.5rem' }}></Grid>
-          </Hidden>
-          <Grid
-            item
-            xs={12}
-            md={4}
-            style={{ marginBlock: '1rem' }}
-            className={classes.centeredDiv}
-          >
-            <Button
-              component={Link}
-              href={'https://forms.gle/Zum8c8Ac151bEyhJ8'}
-              className={classes.button}
-            >
-              <Typography className={classes.btntxt}>
-                A Student of MLRIT
-              </Typography>
-            </Button>
-            <Button
-              component={Link}
-              href={'https://forms.gle/xjLUGPEUfT7LwfTF6'}
-              className={classes.button}
-            >
-              <Typography className={classes.btntxt}>
-                Not a Student of MLRIT
-              </Typography>
-            </Button>
-             <Button
-              component={Link}
-              href={'https://forms.gle/xjLUGPEUfT7LwfTF6'}
-              className={classes.button}
-              disabled
-            >
-              <Typography className={classes.btntxt}>
-                Delegation Application
-              </Typography>
-            </Button> 
-          </Grid>
-          <Hidden smDown>
-            <Grid item xs={12} style={{ height: '5rem' }}></Grid>
-          </Hidden>
-        </Grid>
-      </div>
-    </div> */
 }

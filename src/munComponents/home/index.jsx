@@ -28,8 +28,8 @@ export default function Home() {
       <Landing />
       <WhatnWhy />
       <CountUps />
-      <PrincipalSponsor />
-      <OtherSponsors />
+      {/* <PrincipalSponsor /> */}
+      {/* <OtherSponsors /> */}
       <Gallery />
     </div>
   );

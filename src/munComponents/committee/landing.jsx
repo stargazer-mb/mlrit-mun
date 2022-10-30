@@ -44,7 +44,7 @@ export default function CommitteeLanding(props) {
   let classes = useStyles();
 
   let component = (
-    <Grid container style={{ height: '100vh' }}>
+    <Grid container style={{ height: '100vh', overFlowY: 'hidden' }}>
       <Hidden smDown>
         <Grid item md={1}></Grid>
       </Hidden>

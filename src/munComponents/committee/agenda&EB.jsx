@@ -35,6 +35,7 @@ const useStyles = makeStyles(() => ({
   },
   btntxt: {
     fontFamily: 'Raleway, sans-serif',
+    color: 'white',
   },
 }));
 
@@ -100,7 +101,7 @@ export default function AgendaAndEB(props) {
               <Grid item xs={12} md={6} className={classes.centeredDiv}>
                 <Button
                   component={Link}
-                  href={'https://forms.gle/Zum8c8Ac151bEyhJ8'}
+                  href={props.elements.bgGuideLink}
                   className={classes.button}
                   style={{
                     backgroundImage: `linear-gradient(to right,${props.elements.colors} )`,
@@ -114,18 +115,18 @@ export default function AgendaAndEB(props) {
             ) : (
               ''
             )}
-            {props.elements.allocationMatrixLink !== 0 ? (
+            {props.elements.allocationMatrixLink.length !== 0 ? (
               <Grid item xs={12} md={6} className={classes.centeredDiv}>
                 <Button
                   component={Link}
-                  href={'https://forms.gle/Zum8c8Ac151bEyhJ8'}
+                  href={props.elements.allocationMatrixLink}
                   className={classes.button}
                   style={{
                     backgroundImage: `linear-gradient(to right,${props.elements.colors} )`,
                   }}
                 >
                   <Typography className={classes.btntxt}>
-                    Allocations
+                    Allocation Matrix
                   </Typography>
                 </Button>
               </Grid>

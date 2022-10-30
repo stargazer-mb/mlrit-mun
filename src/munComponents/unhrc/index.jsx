@@ -12,9 +12,21 @@ import AgendaBG from '../../resources/images/unhrcbg.jpg';
 
 const elements = {
   title: 'United Nations Human Rights Council',
-  colors: ['#39FF14', '#1223C2'],
+  colors: [
+    'rgba(0,0,139,0.5)',
+    'rgba(0,0,139,0.75)',
+    'rgba(0,0,139,1)',
+    'rgba(0,0,139,1)',
+    'rgba(0,0,139,1)',
+    'rgba(0,0,139,1)',
+    'rgba(0,0,139,1)',
+    'rgba(0,0,139,1)',
+    'rgba(0,0,139,1)',
+    'rgba(0,0,139,0.75)',
+    'rgba(0,0,139,0.5)',
+  ],
   about:
-    'About the committee lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet',
+    'The objective of this 47 membered council is to investigate allegations of human rights abuse in member states of the United Nations and ensure that the following human rights issues are addressed and upheld to the maximum extent. Freedom of assembly, Freedom of expression and free speech, Freedom of religion, Protection of the rights of women, LGBTQ community, racial and ethnic minorities. MLRIT-MUN opens its doors to people who believe in the rights of every individual. Join the UNHRC and uphold these rights.',
   logo: Logo,
   agenda: Agenda,
   chair: Chair,
@@ -22,8 +34,10 @@ const elements = {
   rapporteur: Rapporteur,
   landingBG: LandingBG,
   agendaBG: AgendaBG,
-  bgGuideLink: 'https://yolo.com',
-  allocationMatrixLink: 'https://yolo.com',
+  bgGuideLink:
+    'https://drive.google.com/file/d/1d7f7L9kX3xAQb1kmkJQ20H-KrlQlEcsd/view?usp=sharing',
+  allocationMatrixLink:
+    'https://docs.google.com/spreadsheets/d/1WUNtgeS0eEfrPKebjPcR-u7uxFDd2ikwXK4PxFVwBFE/edit?usp=sharing',
 };
 
 export default function UNHRC() {

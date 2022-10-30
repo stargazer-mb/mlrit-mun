@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles, Typography } from '@material-ui/core';
 
-let useStyles = makeStyles((props) => ({
+let useStyles = makeStyles(() => ({
   root: {
     position: 'relative',
     display: 'flex',
@@ -50,7 +50,7 @@ let useStyles = makeStyles((props) => ({
 }));
 
 export default function Feature(props) {
-  const classes = useStyles(props);
+  const classes = useStyles();
   return (
     <div className={classes.root}>
       <div

@@ -19,8 +19,12 @@ const CountCard = (props) => {
           {props.count}
         </Typography>
         <Typography
-          variant='h6'
-          // style={{ fontFamily: 'Poppins,sans-serif', fontWeight: 500 }}
+          // variant='h6'
+          style={{
+            fontFamily: 'Poppins,sans-serif',
+            fontSize: '0.8rem',
+            fontWeight: '100',
+          }}
         >
           {props.name}
         </Typography>

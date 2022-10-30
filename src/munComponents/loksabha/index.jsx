@@ -12,9 +12,21 @@ import AgendaBG from '../../resources/images/loksabhabg.jpg';
 
 const elements = {
   title: 'Lok Sabha',
-  colors: ['#ABFF78', '#213ABA'],
+  colors: [
+    'rgba(180,0,0,0.5)',
+    'rgba(180,0,0,0.75)',
+    'rgba(180,0,0,1)',
+    'rgba(180,0,0,1)',
+    'rgba(180,0,0,1)',
+    'rgba(180,0,0,1)',
+    'rgba(180,0,0,1)',
+    'rgba(180,0,0,1)',
+    'rgba(180,0,0,1)',
+    'rgba(180,0,0,0.75)',
+    'rgba(180,0,0,0.5)',
+  ],
   about:
-    'About the committee lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet',
+    'Beaming with politics, this is the lower house of the Indian parliament. A governing body of 543 members (MP), who pass bills regarding various subjects included in the Union and concurrent list. Represent a constituency, act as the delegate to a leader, question the work of the opposition, raise slogans; for this is the greatest place to learn “How to run a country 101”',
   logo: Logo,
   agenda: Agenda,
   chair: Chair,
@@ -22,8 +34,10 @@ const elements = {
   rapporteur: Rapporteur,
   landingBG: LandingBG,
   agendaBG: AgendaBG,
-  bgGuideLink: 'https://yolo.com',
-  allocationMatrixLink: 'https://yolo.com',
+  bgGuideLink:
+    'https://drive.google.com/file/d/15CGpoyZ9x5fJ7MVUbK-ZPM7HWCTbW0a6/view?usp=sharing',
+  allocationMatrixLink:
+    'https://docs.google.com/spreadsheets/d/1WUNtgeS0eEfrPKebjPcR-u7uxFDd2ikwXK4PxFVwBFE/edit?usp=sharing',
 };
 
 export default function LokSabha() {
