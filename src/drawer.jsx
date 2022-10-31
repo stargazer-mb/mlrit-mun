@@ -129,10 +129,10 @@ export default function MobileDrawer() {
             <ListItemText>Features</ListItemText>
           </ListItem>
           <Divider />
-          <ListItem component={Link} to='/team' onClick={handleDrawerClose}>
+          {/* <ListItem component={Link} to='/team' onClick={handleDrawerClose}>
             <ListItemText>Our Team</ListItemText>
           </ListItem>
-          <Divider />
+          <Divider /> */}
           <ListItem
             component={Link}
             to='/clubliterati'

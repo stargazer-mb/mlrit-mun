@@ -54,6 +54,28 @@ const useStyles = makeStyles((theme) => ({
       // transform: 'rotate(180deg)',
     },
   },
+  loader: {
+    width: '10px',
+    height: '0.5rem',
+    animation: `$loadAnimation 2s infinite ease`,
+  },
+  '@keyframes loadAnimation': {
+    '0%': {
+      transform: 'scale(100%,100%)',
+      borderRadius: '0.25rem',
+      background: 'linear-gradient(to left, #151D3B,#D82148)',
+    },
+    '50%': {
+      transform: 'scale(1000%,100%)',
+      borderRadius: '0rem',
+      background: 'linear-gradient(to left, #151D3B,#185ADB)',
+    },
+    '100%': {
+      transform: 'scale(100%,100%)',
+      borderRadius: '0.25rem',
+      background: 'linear-gradient(to left, #151D3B,#D82148)',
+    },
+  },
 }));
 
 function DesktopAppBar() {
@@ -125,7 +147,7 @@ function DesktopAppBar() {
           <Typography className={classes.btntypo}>Features</Typography>
         </Button>
 
-        <Button
+        {/* <Button
           disableRipple
           disableTouchRipple
           disableFocusRipple
@@ -139,7 +161,7 @@ function DesktopAppBar() {
           to='/team'
         >
           <Typography className={classes.btntypo}>Our Team</Typography>
-        </Button>
+        </Button> */}
 
         <Button
           disableRipple
@@ -181,7 +203,7 @@ export default function ButtonAppBar() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 500);
+    }, 10000);
   }, []);
 
   return loading ? (
@@ -195,6 +217,7 @@ export default function ButtonAppBar() {
       }}
     >
       <img src={Logo} alt='logo'></img>
+      <div className={classes.loader}></div>
     </div>
   ) : (
     <div className={classes.root}>
