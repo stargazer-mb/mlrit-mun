@@ -67,6 +67,8 @@ export default function Landing() {
           <Typography
             style={{
               fontSize: '1.6rem',
+              fontWeight: '600',
+              fontFamily: 'Poppins,sans-serif',
               marginTop: '0.5rem',
               marginBottom: '-0.5rem',
             }}
@@ -100,7 +102,13 @@ export default function Landing() {
           </Button> */}
         </div>
         <Hidden smUp>
-          <Typography style={{ marginTop: '1rem' }}>
+          <Typography
+            style={{
+              marginTop: '1rem',
+              fontFamily: 'Garet,sans-serif',
+              fontWeight: '600',
+            }}
+          >
             11th - 13th November, 2022
           </Typography>
         </Hidden>
@@ -114,7 +122,14 @@ export default function Landing() {
               style={{ maxWidth: '80%' }}
             ></img>
           </div>
-          <Typography>11th - 13th November, 2022</Typography>
+          <Typography
+            style={{
+              fontFamily: 'Poppins,sans-serif',
+              // fontWeight: '600',
+            }}
+          >
+            11th - 13th November, 2022
+          </Typography>
         </Grid>
         <Grid item md={1}></Grid>
       </Hidden>

@@ -27,6 +27,7 @@ const useStyles = makeStyles(() => ({
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
+    marginBlock: '2rem',
   },
   underline: {
     height: '0.3em',
@@ -61,7 +62,11 @@ export default function Gallery() {
   let classes = useStyles();
   return (
     <div className={classes.root}>
-      <Typography>GALLERY</Typography>
+      <Typography
+        style={{ fontFamily: 'Poppins,sans-serif', fontSize: '1.2rem' }}
+      >
+        GALLERY
+      </Typography>
       <div className={classes.underline}></div>
       <Carousel>
         {images.map((img, index) => (

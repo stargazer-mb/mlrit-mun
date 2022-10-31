@@ -50,6 +50,12 @@ let useStyles = makeStyles((theme) => ({
       transform: 'translateX(0%)',
     },
   },
+  underline: {
+    height: '0.3em',
+    width: '5em',
+    backgroundImage: 'linear-gradient(to left, #151D3B,#D82148)',
+    marginBlock: '1rem',
+  },
 }));
 
 export default function WhatnWhy() {
@@ -65,7 +71,7 @@ export default function WhatnWhy() {
             <img
               src={whatMUN}
               alt='What is MUN?'
-              style={{ maxWidth: '90%' }}
+              style={{ maxWidth: '90%', marginBlock: '1rem' }}
             ></img>
           </div>
         </Grid>
@@ -74,7 +80,7 @@ export default function WhatnWhy() {
             <img
               src={whyMUN}
               alt='Why MLRIT-MUN?'
-              style={{ maxWidth: '90%' }}
+              style={{ maxWidth: '90%', marginBlock: '1rem' }}
             ></img>
           </div>
         </Grid>
@@ -89,11 +95,23 @@ export default function WhatnWhy() {
         </Hidden>
         <Grid item xs={12} md={8}>
           <div className={classes.divCentercntnt}>
-            <div style={{ width: '80%' }}>
-              <Typography style={{ fontSize: '1.2rem' }}>
+            <div
+              style={{ width: '80%', marginBlock: '1rem' }}
+              className={classes.divCentercntnt}
+            >
+              <Typography
+                style={{ fontSize: '1.2rem', fontFamily: 'Poppins,sans-serif' }}
+              >
                 A Letter from the Secretary General
               </Typography>
-              <Typography style={{ fontSize: '0.75rem', textAlign: 'justify' }}>
+              <div className={classes.underline}></div>
+              <Typography
+                style={{
+                  fontSize: '1.2rem',
+                  textAlign: 'justify',
+                  fontFamily: 'Cookie,cursive',
+                }}
+              >
                 Honourable chairs, <br />
                 Distinguished delegates,
                 <br />
@@ -134,6 +152,7 @@ export default function WhatnWhy() {
                 <br />
                 MLRIT MUN 2022.
               </Typography>
+              <div className={classes.underline}></div>
             </div>
           </div>
         </Grid>
